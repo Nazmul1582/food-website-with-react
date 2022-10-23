@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
     *,
     *::after,
     *::before {
@@ -22,13 +24,17 @@ const GlobalStyle = createGlobalStyle`
     body {
     font-size: 1.6rem;
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     }
 
     #Root {
     min-height: 100vh;
     }
 
+    a{
+        text-decoration: none;
+    }
+    
     table {
     border-collapse: collapse;
     border-spacing: 0;
