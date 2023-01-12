@@ -9,7 +9,8 @@ import {
   MobileMenuIcon,
 } from "./NavbarElements";
 import Logo from "../Logo";
-import { FaRegMoon, FaSun, FaBars } from "react-icons/fa";
+import { FaRegMoon, FaBars } from "react-icons/fa";
+import { BsSunFill } from "react-icons/bs";
 
 export default function Navbar({ lightMode, changeTheme, toggle }) {
   console.log(lightMode);
@@ -26,7 +27,7 @@ export default function Navbar({ lightMode, changeTheme, toggle }) {
         </NavItems>
         <NavRight>
           <Theme onClick={changeTheme}>
-            {lightMode ? <FaSun /> : <FaRegMoon />}
+            {!lightMode ? <BsSunFill /> : <FaRegMoon />}
           </Theme>
           <MobileMenuIcon onClick={toggle}>
             <FaBars />
